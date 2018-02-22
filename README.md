@@ -31,13 +31,13 @@ Reference to the following guide to know where is located the [TOKEN](http://hel
 To run the command reference to the structure below: 
 
 ```
-$ tilt-send-data.js -T "{Ubidots_TOKEN}" -t {timeout_in_minutes} 
+$ tilt-send-data -T "{Ubidots_TOKEN}" -t {timeout_in_minutes} 
 ```
 
 **Command example**:
 
 ```
-$ tilt-send-data.js -T "BBFF-KvcUDRGARBkUDR5bogMVuKVcKigvsYAMvVVr9H278H2u2M34KvSne8R" -t 1
+$ tilt-send-data -T "BBFF-KvcUDRGARBkUDR5bogMVuKVcKigvsYAMvVVr9H278H2u2M34KvSne8R" -t 1
 ```
 
 The command above will handle a request with **temperature**, **gravity**, and **rssi** values every one minute.
@@ -69,13 +69,13 @@ As optional arguments you can handle **measured power**, **accuracy**, and **pro
 To run the command with the optional arguments reference to the structure below:
 
 ```
-$ tilt-send-data.js -T "{Ubidots_TOKEN}" -t {timeout_in_minutes} -m "{device_label_mesuredPower}" -a "{device_label_accuracy}" -p "{device_label_proximity}"
+$ tilt-send-data -T "{Ubidots_TOKEN}" -t {timeout_in_minutes} -m "{device_label_mesuredPower}" -a "{device_label_accuracy}" -p "{device_label_proximity}"
 ```
 
 **Command example**:
 
 ```
-$ tilt-send-data.js -T "BBFF-KvcUDRGARBkUDR5bogMVuKVcKigvsYAMvVVr9H278H2u2M34KvSne8R" -t 1 -m "mesuredPower" -a "accuracy" -p "proximity"
+$ tilt-send-data -T "BBFF-KvcUDRGARBkUDR5bogMVuKVcKigvsYAMvVVr9H278H2u2M34KvSne8R" -t 1 -m "mesuredPower" -a "accuracy" -p "proximity"
 ```
 
 The command above will handle a request with the default data (**temperature**, **gravity**, and **rssi**), plus the **measured power**, **accuracy**, and **proximity** values every one minute.
